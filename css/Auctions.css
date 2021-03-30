@@ -1,0 +1,257 @@
+*{
+    
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+ :root{
+     --coolRed: rgb(254,61,62);
+ }
+body{
+    font-family: 'Roboto';
+    overflow-x: hidden  ;
+    height: 100%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    width: 100vw;
+    top: 0%;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Roboto';
+    height: 70px;   
+    border-bottom:0.5px solid rgb(235,235,235);padding-bottom:10px;
+    
+}
+nav li:last-child a{
+    list-style-position:inside;
+    border: 5px black;  
+    color: white;
+    line-height: 15px;
+}
+
+.SignUpbutton{
+    display: flex;
+    justify-content: center;    
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.966);
+    background-color: var(--coolRed);
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    margin-left: 0px;
+    height: 60px;
+    padding-left: 0px;
+    background-color: rgb(255, 255, 255);
+    
+    
+
+}
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}   
+.navLinks li{
+    list-style: none;
+}
+.navLinks a{
+    color: #151515;
+    font-weight: 400px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+
+}
+
+a:hover{
+    color: var(--coolRed);
+    
+}
+
+.homeImg{
+    width: 1360px;
+    
+    
+}
+.NewListing{
+    font-family: 'roboto';
+    font-weight: 200;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--coolRed);
+   
+}
+.NewListing i{
+    margin-left: 5px;
+    font-weight: 200;
+    
+}
+
+
+/* Utility stylings */
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0%;
+   
+}
+.lg-title,
+.md-title,
+.sm-title{
+    font-family: 'Roboto', sans-serif;
+    padding: 0.6rem 0;
+    text-transform: capitalize;
+}
+
+.md-title{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.sm-title{
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/*Products CSS*/
+.products{
+    background: var(--alice-blue);
+    padding: 3.2rem 0;
+    
+   
+    
+}
+.products .text-light{
+    text-align: center;
+    width: 70%;
+    margin: 0.9rem auto;
+}
+.product{
+    margin: 2rem;
+    position: relatve;
+   
+}
+.product-content{
+    
+    padding: 3rem 0.5rem 2rem 0.5rem;
+    cursor: pointer;
+}
+.product-img{
+    background: var(--white-light);
+    box-shadow: 0 0 20px 10px var(--white-light);
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: background 0.5s ease;
+}
+
+
+.product-info{
+    background: white;
+    padding: 2rem;
+}
+.product-info-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-name{
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-price{
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+    display: inline-block;
+}
+
+.product-img img{
+    transition: transform 0.6s ease;
+}
+.product:hover .product-img img{
+    transform: scale(1.1);
+}
+.product:hover .product-img{
+    background: var(--carribean-green);
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (min-width: 992px){
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-col-r-bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px){
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .products .text-light{
+        width: 50%;
+    }
+}
+
+
+
+
+
+#footer{
+    color: white;
+    
+    width: 1400px;
+     
+    padding: 3px;
+    background-color:  rgb(75, 74, 74) ;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 300;
+  
+}
+#footer p{
+ margin-left: 460px;
+}
+
+
+

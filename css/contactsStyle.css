@@ -1,0 +1,114 @@
+*{
+    
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+ :root{
+     --coolRed: rgb(254,61,62);
+ }
+body{
+    font-family: 'Roboto';
+    overflow-x: hidden;
+    background-image: url("../pages/images/contact.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0px;
+}
+
+
+nav {
+    display: flex;
+    position: sticky;
+    width: 100vw;           
+    top: 0%;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    
+    font-family: 'Roboto';
+    height: 70px;   
+    border-bottom:0.5px solid rgb(235,235,235);padding-bottom:10px;
+    
+}
+nav li:last-child a{
+    list-style-position:inside;
+    border: 5px black;  
+    color: white;
+    line-height: 15px;
+}
+
+.SignUpbutton{
+    display: flex;
+    justify-content: center;    
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.966);
+    background-color: var(--coolRed);
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    margin-left: 0px;
+    height: 60px;
+    padding-left: 0px;
+    background-color: rgb(255, 255, 255);
+    
+    
+
+}
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}   
+.navLinks li{
+    list-style: none;
+}
+.navLinks a{
+    color: #151515;
+    font-weight: 400px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+
+}
+
+a:hover{
+    color: var(--coolRed);
+    
+}
+
+
+
+.contactUs{
+    text-align: center;
+    font-family: 'Roboto';
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    background-color: rgb(48, 48, 48,0.5);
+    border-radius: 25px;
+    font-weight: 400;
+}
+
+.Email{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 50px;
+    color: antiquewhite;
+    font-weight: 400;
+    background-color: rgb(48, 48, 48,0.5);
+    background-origin: padding-box;
+    border-radius: 25px;
+    box-sizing:inherit;
+
+}

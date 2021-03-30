@@ -1,0 +1,243 @@
+*{
+    
+    padding: 0px;
+    box-sizing: border-box;
+    
+    
+
+
+}
+ :root{
+     --coolRed: rgb(254,61,62);
+ }
+body{
+    font-family: 'Roboto';
+    margin: 0;
+    overflow-x: hidden;
+    margin-left: 20px;
+    
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    width: 100vw;
+    top: 0%;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Roboto';
+    height: 70px;   
+    border-bottom:0.5px solid rgb(235,235,235);padding-bottom:10px;
+    
+}
+nav li:last-child a{
+    list-style-position:inside;
+    border: 5px black;  
+    color: white;
+    line-height: 15px;
+    font-weight: 500;
+   
+}
+
+.SignUpbutton{
+    display: flex;
+    justify-content: center;    
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.966);
+    background-color: var(--coolRed);
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    margin-left: 0px;
+    height: 60px;
+    padding-left: 0px;
+    background-color: rgb(255, 255, 255);
+    
+    
+
+}
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}   
+.navLinks li{
+    list-style: none;
+}
+.navLinks a{
+    color: #151515;
+    font-weight: 400px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+
+}
+
+.header{
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 32px;
+    font-weight: 500px;
+    color: rgb(0, 0, 0);
+}
+
+#outer-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0px;
+    
+    height: 600px;
+    
+    
+  }
+  #outer-grid img{
+    height:580px ;
+    width: 950px;
+      padding-right: 4px;
+      
+  }
+  #outer-grid > div {
+    padding: 0px;
+    width: 100%;
+
+  }
+
+  #inner-grid {
+     display: inline-block;
+     height: 400px;
+     width: 355px;
+    vertical-align: middle;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+  }
+  #inner-grid img{
+    height: 190px;
+    width: 335px;
+  }
+  
+    
+  
+  #inner-grid > div {
+    
+    padding: 0px;
+
+
+  }
+
+  .CarDetails{
+      display: flex;
+
+
+  }
+  .CarDetails p{
+ font-family: 'roboto';
+ font-weight: 400;
+ size: 16px;
+ line-height: 23px;
+ color:#181716;
+ margin-left: 9px;
+  }
+  
+  
+  
+  .content-table {
+    border-collapse: collapse;
+    
+    margin-left: 40px;
+    margin-top: 0px ;
+
+    width: 700px;
+    font-size: 0.9em;
+    
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  .content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color:var(--coolRed);
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+   .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid red;
+  }
+  
+  
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid red;
+  }
+  
+  .Callbutton{
+    background-color: var(--coolRed);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+    padding: 9px;
+    border: none;
+    border-radius: 15px;
+    text-decoration:none;
+    cursor: pointer;
+    margin-bottom: 9px;
+}
+.allbutton{
+    text-decoration: none;
+    
+}
+.allbutton button:hover{
+    text-decoration:none ;
+    background-color: rgb(255, 0, 0);
+    
+    
+}
+ 
