@@ -283,10 +283,11 @@ img{
 
 
 @media screen and (max-width:768px) {
-    *{
-        overflow-x: hidden;
-    }
+    
+        
+    
     .navLinks { 
+        overflow-x: hidden;
         position: absolute;
         right: 0px;
         height: 92vh;
