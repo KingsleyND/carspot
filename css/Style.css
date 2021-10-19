@@ -13,6 +13,7 @@ body{
     font-family: 'Roboto';
     overflow-x: hidden  ;
     margin-left: 0px;
+    margin-right: 0%;
     height: 100%;
      margin-bottom: 0px;
     
@@ -32,7 +33,8 @@ nav {
     min-height: 8vh;
     font-family: 'Roboto';
     height: 70px;   
-    border-bottom:0.5px solid rgb(235,235,235);padding-bottom:10px;
+    border-bottom:0.5px solid rgb(235,235,235);
+    padding-bottom:10px;
     
 }
 nav li:last-child a{
@@ -50,7 +52,7 @@ nav li:last-child a{
     font-weight: bold;
     color: rgba(255, 255, 255, 0.966);
     background-color: rgb(255, 68, 68);
-    border-radius: 6px;
+    border-radius: 3px;
     border: none;
     padding: 10px;
     width: 80px;
@@ -92,8 +94,10 @@ a:hover{
 
 
 .homeImg{
-    width: 1390px;
-    height: 800px;
+    /* width: 1390px; */
+    width: 100vw;
+    
+    height: 100vh;
     max-width: 100%;
     
     
@@ -251,13 +255,130 @@ img{
   
 }
 #footer p{
- margin-left: 460px;
+    text-align: center;
  
 }
 
 
 
 
+
+
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 0, 0);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .navLinks { 
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(0, 0, 0, 0.781);
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+    }  
+    .navLinks a{
+        color: white;
+    }
+    a:hover{
+        color: var(--coolRed);
+        transition: 0.3s;
+    }
+
+    nav li:last-child a{
+        list-style-position:inside;
+        line-height: 15px;
+        border: 5px black;  
+        color: rgb(218, 47, 47);
+       
+    }
+    nav li:last-child a:hover{
+        color: red;
+    }
+    
+    .SignUpbutton{
+        
+        justify-content: center;    
+        font-size: 15px;
+        font-weight: 400px;
+        
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 3px;
+        border: none;
+        padding: 2px;
+        width: 80px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .navLinks li{
+        opacity: 0; 
+        
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .nav-active{
+        transform: translate(0%);
+    }
+
+    .homeImg{
+        width: 1390px;
+        object-fit: cover;
+
+        height: 100vh;
+        max-width: 100%;
+        
+        
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translate(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translate(0px);
+        }
+    }
+   
+    .toggle .line1{
+        transform: rotate(-405deg) translate(-5px,6px);
+    }
+
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(405deg) translate(-5px,-6px);
+
+    }
+
+    
+}
 
 
 
